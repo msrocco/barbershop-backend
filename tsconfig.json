@@ -1,5 +1,5 @@
 {
-	"compilerOptions": {
+  "compilerOptions": {
     "target": "es5",
     "module": "commonjs",
     "outDir": "./dist",
@@ -7,6 +7,7 @@
     "strict": true,
     "strictPropertyInitialization": false,
     "baseUrl": "./src",
+    "allowJs": true,
     "paths": {
         "@modules/*": ["modules/*"],
         "@config/*": ["config/*"],
@@ -15,7 +16,8 @@
     "esModuleInterop": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
-   }
+  },
+  "include": ["./src", "./tmp"],
+  "exclude": ["prettier.config.js"]
 }
